@@ -6,3 +6,12 @@ body, html {
   margin: auto;
   font-family: 'Alatsi', sans-serif;
 }
+
+<style>
+  .bar .bar-button{
+    padding: 16px; 
+}
+  
+.navbar{
+     
+}

@@ -1,7 +1,408 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<title>Claremont Communications - Global IT Software Services</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="Description" content="Solutions: management, training, technical design, and software engineering services." />
+
+<meta name="Keywords" content="Claremont Communications, claremont, consultant, consulting, sustainable, green building, LEED, software development, 
+energy, conservation, auditing, commissioning, DALI, BACnet, project management, business management, technical training, business software, engineering, 
+strategy, evaluation, services, web development, joomla, content, management, systems, cms, CMS, Csharp, C#, VB.Net, PHP, Python, AJAX, JAVA, JavaScript, 
+jQuery, HTML, XHTML, HTML5, html 5, Claremont Communications, ontario, ottawa, kanata, canada" />
+<link rel="stylesheet" href="css/cci.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/slide1.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
 <body>
-<h1>Hello World, is this working?<h1>
-<p>I'm being hosted on GitHub Pages hopefully.</p>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <h2><strong><a href="#home" class="w3-bar-item w3-button w3-wide" alt="claremont"><img src="images/logo.jpg" alt="CLAREMONT COMMUNICATIONS LOGO" />Claremont</a></strong></h2>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" alt="about link" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#services" alt="services link" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SERVICES</a>
+      <a href="#work" alt="work link" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+   <!--   <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a> -->
+      <a href="#contact" alt="contact link" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="https://www.facebook.com/claremontcomm/" alt="Claremont on Facebook" class="w3-bar-item w3-button">  <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/claremontcomm" alt="Claremont on Twitter" class="w3-bar-item w3-button">   <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/claremont-communications" alt="Claremont on Linkedin" class="w3-bar-item w3-button">   <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" alt="claremont " class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" alt="claremont" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close </a><br />
+  <a href="#about" alt="about link" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#services" alt="services link" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+  <a href="#work" alt="work link" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+ <!--   <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a> -->
+  <a href="#contact" alt="contact link" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+      <a href="https://www.facebook.com/claremontcomm/" alt="Claremont on Facebook" class="w3-bar-item w3-button"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/claremontcomm" alt="Claremont on Twitter" class="w3-bar-item w3-button"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/claremont-communications" alt="Claremont on Linkedin" class="w3-bar-item w3-button"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home"><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Design Develop Demonstrate</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Design Develop Demonstrate</span><br>
+    <span class="w3-large">Start something that matters.</span>
+    <p><a href="#about" alt="about link" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more | start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Key features of Claremont Communications</h3>
+  <p class="w3-center w3-large"></p>
+  <p>Claremont Communications have been utilizing proven project management methodologies to achieve outcomes for our clients competitive advantage. Whether your organization is large, medium or small, together with our partners, we will consult with you to streamline requirements, derive efficient plans, implement effective solutions and assist your organization every step of the way to engineering the best software for your requirements. We develop end-to-end strategies for your success, managing the complete project for you thoroughly. Claremont Communications has a proven track record we are proud of.  We succeed by providing professional guidance and exacting implementations to go beyond the standards in attaining truly sustainable projects and bringing technological innovation to the forefront of today's development.</p>
+  <p>Headquartered in Ottawa, Ontario, we have operated in the National Capital Region since 1995. This is in the Regional Municipality of Ottawa-Carleton, 
+   Province of Ontario, Canada. This location puts us in the heart of Canada's Silicon Valley North - Capital Region. Only two hours drive from Montreal and 
+   four hours from Toronto. Access to the United States of America is only one hour to the south of the area. Ottawa is connected via air and rail to major 
+   cities in Canada and the world</p>
+</div>
+<!-- Promo Section - "We know software" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know software development.</h3>
+      <p>Whether it is managing the process or writing the code our project managers and developers are there to help.<br /> 
+      Since the 1990's we have been designing and developing highly efficient bug free code. Our experience and insight ranges from integrated systems to building control systems to data integration and exchange to Big Data stores for analytics.<br />
+Since 1995 we have worked with clients to Design, Develop and Prototype their software using lanaguages such as C++, C#, Java, Python, PHP, HTML, CSS, JavaScript, Angular.js and React</p>
+      <p><a href="#work" alt="work link" class="w3-button w3-black"><i class="fa fa-th"></i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/images/phone_buildings.jpg" alt="Buildings" width="600" height="354">
+    </div>
+  </div>
+</div>
+ 
+<!-- Services Section -->
+ <div class="w3-container" style="padding:128px 16px" id="services">
+  <h3 class="w3-center">SERVICES</h3>
+<!--  <p class="w3-center w3-large">Our Experience</p> -->
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+    <img src="/images/os.jpg" alt="Operating Systems image" style="width:100%">
+        <div class="w3-container">
+          <h3>Operating Systems</h3>
+          <p class="w3-opacity"></p>
+          <p>From Open Source Linux to Microsoft to Apple we have the experience to ensure your success. Let's talk about the proper platform for your needs from desktop to server to global sites we can configure it,
+            manage it, and even train your employees and users on those same servers.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i><a href="#contact" alt="contact link" onclick="w3_close()"> CONTACT</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+       <img src="/images/prog.jpg" alt="programming image" style="width:100%"> 
+        <div class="w3-container">
+          <h3>Programming</h3>
+          <p class="w3-opacity"></p>
+          <p>We know development languages from C#, VB and Java to Python, Ruby and PHP we can code your requirements for you. We'd be more than happy to talk about our range of experiences in everything from data exchange to controls systems and how we can fit your needs.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i><a href="#contact" alt="contact link" onclick="w3_close()"> CONTACT</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+       <img src="/images/datawords.jpg" alt="Date Store image" style="width:100%">
+        <div class="w3-container">
+          <h3>Data Storage</h3>
+          <p class="w3-opacity"></p>
+          <p>Structured Query Lanaguage has been in our stable since 1980's and we our proud to partner since 1995 with Oracle and Microsoft and others to meet your RDBMS needs. 
+             Looking for Big Data Storage we can deliver Hadoop, Spark, HBase, Hive, Cassandra and MongoDb. Our experiences with past projects mean success for you.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i><a href="#contact" alt="contact link" onclick="w3_close()"> CONTACT</a></button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+      <img src="/images/web.jpg" alt="Web Design image" style="width:100%">
+        <div class="w3-container">
+          <h3>Web</h3>
+          <p class="w3-opacity"></p>
+          <p>From simple to CMS and Web Services, we have you covered. Need responsive or mobile development we'll bring our experience with HTML5, CC3 and Javascript and today's latest software to help.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i><a href="#contact" alt="contact link" onclick="w3_close()"> CONTACT</a></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+<p>  </p>
+</div>
+ 
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What can we do for you</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+<!--    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+-->
+  </div>
+</div>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+<p>Whether it is managing the process or writing the code our project managers and developers are there to help. Since the 1990's we have been designing and developing highly efficient bug free code. Our experience and insight ranges from integrated systems to building control systems to data integration and exchange to Big Data stores for analytics.</p>
+      <p>Since 1995 we have worked with clients to Design, Develop and  
+       Prototype their software using lanaguages such as C++, C#, Java, Python, 
+      PHP, HTML, CSS, JavaScript, Angular.js and React</p>
+    </div>
+    <div class="w3-col m6">
+    <p class="w3-wide"><i class="fa fa-user w3-margin-right"></i>Management</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div> 
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Development</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Prototype</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+  </div>
+</div>
+</div>
+<!-- Pricing Section
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Ask for a quote today, we have a pricing plan that fits your needs. </p>
+   <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+<br /><br /><br /><br /><br />
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Ottawa, Ontario Canada</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 1-613-863-0568</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> sales@claremont.ca</p>
+      <p><i class="fa fa-clock-o fa-fw w3-xxlarge w3-margin-right"> </i> Monday to Friday</p>
+      <br>
+    <!--  <form action="action_page.php" target="_blank" enctype="multipart/form-data"> -->
+<form action="/webformmailer.php" method="post">
+        <p><label>Name<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></label></p>
+        <p><label>Email<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></label></p>
+        <p><label>Subject<input class="w3-input w3-border" type="text" placeholder="Subject" required name="message_subject"></label></p>
+        <p><label>Message<input class="w3-input w3-border" type="text" placeholder="Message" required name="message_body"></label></p>
+        <p>
+       <button class="w3-button w3-black" type="submit">
+           <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" alt="home link" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/claremontcomm/" alt="Claremont on Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/claremontcomm" alt="Claremont on Twitter"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/claremont-communications" alt="Claremont on Linkedin"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>&copy; 1995-2020 Claremont Communications Inc.</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11699857-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11699857-1');
+</script>
+
 </body>
-</html>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0645'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>

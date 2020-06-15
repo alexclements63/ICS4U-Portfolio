@@ -1,4 +1,4 @@
-# ICS4U-Portfolio.github.io
+# ICS4U Portfolio
 [A collection of my projects from the ICS4U course.](https://alexclements63.github.io/ICS4U-Portfolio/)
 
 ## Interview Questions And Answers
